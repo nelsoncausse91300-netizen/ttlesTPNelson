@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  
+    <link  href="style.css" rel="stylesheet">
+</head>
+<body>
+        <h1>Formulaire d'inscription: </h1>
+        
+        <form>
+            <table>
+
+            <tr>
+        <td><label for="nom" class="label1">Nom d'utilisateur :</label></td>
+        <td><input type="text" id="nom" name="nom"></td>
+        </tr>
+            
+            <tr>   
+        <td><label for="password" class="label1">Mot de passe : </label></td>
+        <td><input type="password" id="password" name="password"></td>
+        </tr> 
+            
+            <tr>
+        <td><label for="password" class="label2">Comfirmation du mot de passe : </label></td>
+        <td><input type="password" id="password" name="password"></td>
+        </tr>
+
+            <tr>
+        <td><label for="email" class="label2">email :</label></td>
+        <td><textarea type="email" id="email" name="email"></textarea></td>
+        </tr>
+
+        <tr>
+                <td><label for="date" class="label2">Date de naissance : </label></td>
+                <td><input type="date" id="date" name="date"></input></td>
+                </tr>
+
+        <tr>
+                <td><label for="gender" class="label2">Genre</label></td>
+                 <td><input type="radio" id="gender1" name="gender" value="homme"> Homme
+                 <input type="radio" id="gender2" name="gender" value="femme">  Femme
+                 <br>
+                 <input type="radio" id="gender3" name="gender" value="autre"> Autre</td>
+                </tr>
+        
+
+        </table>
+        </form>
+        <input type="submit" value="S'inscrire">
+</body>
+</html>
