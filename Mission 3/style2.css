@@ -1,0 +1,28 @@
+
+.formulaire {
+    display: flex;
+    height: 100%;   
+    justify-content: center;
+    align-items: center; 
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    background-color: yellow;
+    margin : auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
