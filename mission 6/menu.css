@@ -161,5 +161,77 @@ nav input[type=checkbox]:checked ~ ul{
         display: block;
         position: static;
     }
+
+   
+    
+    
 }
 
+.menu-Base:hover{
+    border-top: 5px solid #9ee8ff;
+    background-color: rgba(220, 220, 220, 0.15);
+}
+
+.menu-PHP:hover{
+    border-top: 5px solid #a03aa0;
+    background-color: rgb(129, 59, 120);
+}
+
+.menu-Mission:hover{
+    border-top: 5px solid #ff5757;
+    background-color: rgba(255, 125, 147, 0.15);
+}
+
+
+.menu-Certification:hover{
+    border-top: 5px solid #7cffa3;
+    background-color: rgba(220, 220, 220, 0.15);
+}
+
+.menu-Base .submenu li:hover{
+    background-color: rgb(74, 122, 131);
+}
+
+.menu-PHP .submenu li:hover{
+    background-color: rgb(93, 58, 150);
+}
+
+.menu-Mission .submenu li:hover{
+    background-color: rgb(146, 62, 62);
+}
+
+.menu-Certification .submenu li:hover{
+    background-color: rgb(77, 139, 75);
+}
+
+.menu-Base .submenu li:hover{
+    background-color: RGB(200, 165, 75);
+}
+
+.menu-Mission .submenu li:hover{
+    background-color: RGB(200, 165, 75);
+}
+
+.menu-PHP .submenu li:hover{
+    background-color: RGB(200, 165, 75);
+}
+
+.menu-Certification .submenu li:hover{
+    background-color: RGB(200, 165, 75);
+}
+
+.menu-Base .submenu {
+    background-color: rgb(133, 237, 255);
+}
+
+.menu-PHP .submenu {
+    background-color: rgb(155, 94, 255);
+}
+
+.menu-Mission .submenu {
+    background-color: rgb(255, 101, 101);
+}
+
+.menu-Certification .submenu {
+    background-color: rgb(141, 255, 137);
+}
