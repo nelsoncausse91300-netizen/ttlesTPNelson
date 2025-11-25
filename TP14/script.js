@@ -41,3 +41,37 @@ function login(){
   window.location.href="non.html";
    }
 }
+
+function seconnecter3(){
+    var i = 0;
+    do {
+        var id = prompt("Entrez votre nom d'utilisateur");
+        var mdp = prompt("Entrez votre mot de passe");
+        if (id == "admin" && mdp == "admin"){
+            document.write("bienvenue" + id);
+            break;
+        } else alert("Accès refusé");
+        i += 1;
+    } while (i < 3);
+    if (i == 3) alert("Delai dépassé");
+}
+
+function addLigne(){
+    window.location.href="tableau.html"
+    var name = document.getElementById("nom").value;
+    var age = document.getElementById("age").value;
+
+    if (name == "" || age == "") {
+        alert("un des deux éléments n'est pas complet ou valide");
+    } else if (age < 10 || age > 20) {
+        alert("L'age n'est pas valide");
+    }
+    else {
+        var table = document.getElementById("myTable");
+        var newRow = table.insertRow(-1);
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        cell1.innerHTML = name;
+        cell2.innerHTML = age;
+    }
+}

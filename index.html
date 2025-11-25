@@ -4,33 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Menu responsive déroulant HTML / CSS</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <h1>TP CAUSSE Nelson</h1>
-   <h2> <a href="TP2/index.html">TP2 </a>
-   <br> <a href="TP3/index.html">TP3 </a>
-   <br> <a href="TP4/index.html">TP4</a>
-   <br> <a href="Mission2/index.html">Mission2</a>
-   <br> <a href="TP5/index.html">TP5</a>
-   <br> <a href="TP6/index.html">TP6</a>
-   <br> <a href="Mission 3/mission3.html">Mission3</a>
-   <br> <a href="TP7.1/index.html">TP7.1</a>
-   <br> <a href="TP7.2/index2.html">TP7.2</a>
-   <br> <a href="TP8/index.html">TP8</a>
-   <br> <a href="mission4/Mission 4 - Les environnements d’exploitation.pdf">Mission4</a>
-   <br> <a href="TP9/calculatrice.html">TP9</a>
-   <br> <a href="TP10/calculatrice.html">TP10</a>
-   <br> <a href="mission 5/cv.html">Mission5</a>
-   <br> <a href="TP11/index.html">TP11</a>
-   <br> <a href="TP12/index.html">TP12</a>
-   <br> <a href="mission 6/menu.html">Mission6</a>
-   <br> <a href="TP13/index.html">TP13</a>
-   <br> <a href="TP14/index.html">TP14</a>
-   <br> <a href="TP15/index.html">TP15</a>
-   <br> <a href="Certificat_rgpd1.pdf">certif rgpd 1</a>
-   <br> <a href="Attestation_de_suivi rgpd.pdf">certif rgpd 2</a>
-   <br> <a href="Certificat_rgpd 3.pdf">certif rgpd 3</a>
-   <br> <a href="Certificat_rgpd 4.pdf">certif rgpd 4</a></h2>
+    <nav>
+        <label for="menu-mobile" class="menu-mobile">Menu</label>
+        <input type="checkbox" id="menu-mobile" role="button" />
+        <ul>
+            <li class="menu-html"><a href="#">HTML</a>
+                <ul class="submenu">
+                    <li><a href="TP2/index.html">TP2</a></li>
+                    <li><a href="TP3/index.html">TP3</a></li>
+                    <li><a href="TP4/index.html">TP4</a></li>
+                </ul>
+            </li>
+            <li class="menu-css"><a href="#">CSS</a>
+                <ul class="submenu">
+                    <li><a href="TP5/index.html">TP5</a></li>
+                    <li><a href="TP6/index.html">TP6</a></li>
+                    <li><a href="TP7.1/index.html">TP7.1</a></li>
+                    <li><a href="TP7.2/index2.html">TP7.2</a></li>
+                    <li><a href="TP8/index.html">TP8</a></li>
+                </ul>
+            </li>
+            <li class="menu-js"><a href="#">JavaScript</a>
+                <ul class="submenu">
+                    <li><a href="TP9/calculatrice.html">TP9</a></li>
+                    <li><a href="TP10/calculatrice.html">TP10</a></li>
+                    <li><a href="TP11/index.html">TP11</a></li>
+                    <li><a href="TP12/index.html">TP12</a></li>
+                    <li><a href="TP13/index.html">TP13</a></li>
+                    <li><a href="TP14/index.html">TP14</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu-Base"><a href="#">Base de donné</a>
+                <ul class="submenu">
+                    <li><a href="TP15/index.html">TP15</a></li>
+                </ul>
+            </li>
+            <li class="menu-PHP"><a href="#">PHP</a>
+                <ul class="submenu">
+
+                </ul>
+            </li>
+            <li class="menu-Mission"><a href="#">Mission</a>
+                <ul class="submenu">
+                    <li> <a href="Mission2/index.html">Mission2</a></li>
+                    <li><a href="Mission 3/mission3.html">Mission3</a></li>
+                    <li><a href="mission4/Mission 4 - Les environnements d’exploitation.pdf">Mission4</a></li>
+                    <li><a href="mission 5/cv.html">Mission5</a></li>
+                    <li><a href="mission 6/menu.html">Mission6</a></li>
+
+                </ul>
+            </li>
+            <li class="menu-Certification"><a href="#">Certification</a>
+                <ul class="submenu">
+                    <li> <a href="Certificat_rgpd1.pdf">RGPD 1</a></li>
+                    <li><a href="Attestation_de_suivi rgpd.pdf">RGPD 2</a></li>
+                    <li><a href="Certificat_rgpd 3.pdf">RGPD 3</a></li>
+                    <li><a href="Certificat_rgpd 4.pdf">RGPD 4</a></li>
+                    <li><a href="Certificat_rgpd 5.pdf">RGPD 5</a></li>
+                    <li> <a href="Attestation_de_suivi rgpd 6.pdf">RGPD 6</a></li>
+                    <li><a href="Mission 3/mission3.html">Mission3</a></li>
+                    <li><a href="Attestation MOOC d'ANSSI.pdf">MOOC d'ANSSI</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>                    
+                </ul>
+            </li>
+            <li class="menu-contact"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
 </body>
 </html>
