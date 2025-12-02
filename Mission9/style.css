@@ -1,0 +1,39 @@
+body {
+    font-family: "Times New Roman", serif;
+    margin: 20px 40px;
+}
+
+h1 {
+    text-align: right;
+    color: darkred;
+    font-size: 22px;
+}
+
+hr {
+    margin: 10px 0 20px 0;
+    border: 0;
+    border-top: 1px solid black;
+}
+
+.intro {
+    color: green;
+    font-weight: bold;
+}
+
+.good {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 8px 18px;
+    background: #e6e6e6;
+    border: 1px solid #777;
+    cursor: pointer;
+}

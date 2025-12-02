@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>QCM Réseau (10 questions)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<h1>QCM Réseau</h1>
+
+<form id="qcm">
+
+    <div class="question">
+        <p>1. Que signifie LAN ?</p>
+        <label><input type="radio" name="q1" value="local"> Local Area Network</label><br>
+        <label><input type="radio" name="q1" value="large"> Large Access Network</label><br>
+        <label><input type="radio" name="q1" value="long"> Long Area Node</label>
+    </div>
+
+    <div class="question">
+        <p>2. Quelle est une adresse IP privée ?</p>
+        <label><input type="radio" name="q2" value="ip1"> 10.0.0.1</label><br>
+        <label><input type="radio" name="q2" value="ip2"> 74.125.24.5</label><br>
+        <label><input type="radio" name="q2" value="ip3"> 154.8.2.1</label>
+    </div>
+
+    <div class="question">
+        <p>3. Quel protocole sert pour l’envoi de fichiers ?</p>
+        <label><input type="radio" name="q3" value="ftp"> FTP</label><br>
+        <label><input type="radio" name="q3" value="dns"> DNS</label><br>
+        <label><input type="radio" name="q3" value="smtp"> SMTP</label>
+    </div>
+
+    <div class="question">
+        <p>4. Quel protocole distribue automatiquement des adresses IP ?</p>
+        <label><input type="radio" name="q4" value="dhcp"> DHCP</label><br>
+        <label><input type="radio" name="q4" value="http"> HTTP</label><br>
+        <label><input type="radio" name="q4" value="ssh"> SSH</label>
+    </div>
+
+    <div class="question">
+        <p>5. Que signifie DNS ?</p>
+        <label><input type="radio" name="q5" value="domain"> Domain Name System</label><br>
+        <label><input type="radio" name="q5" value="dynamic"> Dynamic Network Service</label><br>
+        <label><input type="radio" name="q5" value="digital"> Digital Naming Server</label>
+    </div>
+
+    <div class="question">
+        <p>6. Quel équipement relie plusieurs réseaux entre eux ?</p>
+        <label><input type="radio" name="q6" value="routeur"> Routeur</label><br>
+        <label><input type="radio" name="q6" value="switch"> Switch</label><br>
+        <label><input type="radio" name="q6" value="rep"> Répéteur</label>
+    </div>
+
+    <div class="question">
+        <p>7. Quel est le port utilisé par HTTP ?</p>
+        <label><input type="radio" name="q7" value="80"> 80</label><br>
+        <label><input type="radio" name="q7" value="53"> 53</label><br>
+        <label><input type="radio" name="q7" value="443"> 443</label>
+    </div>
+
+    <div class="question">
+        <p>8. Quel protocole sécurise la navigation web ?</p>
+        <label><input type="radio" name="q8" value="https"> HTTPS</label><br>
+        <label><input type="radio" name="q8" value="telnet"> TELNET</label><br>
+        <label><input type="radio" name="q8" value="ftp"> FTP</label>
+    </div>
+
+    <div class="question">
+        <p>9. Un switch travaille à quelle couche du modèle OSI ?</p>
+        <label><input type="radio" name="q9" value="2"> Couche 2</label><br>
+        <label><input type="radio" name="q9" value="3"> Couche 3</label><br>
+        <label><input type="radio" name="q9" value="1"> Couche 1</label>
+    </div>
+
+    <div class="question">
+        <p>10. Quelle adresse représente un broadcast IPv4 ?</p>
+        <label><input type="radio" name="q10" value="broad"> 255.255.255.255</label><br>
+        <label><input type="radio" name="q10" value="loop"> 127.0.0.1</label><br>
+        <label><input type="radio" name="q10" value="null"> 0.0.0.0</label>
+    </div>
+
+    <div class="buttons">
+        <button type="button" onclick="corriger()">Correction</button>
+        <button type="reset">Effacer</button>
+        <button type="button" onclick="ouvrirCorrige()">Corrigé</button>
+    </div>
+
+    <p id="resultat"></p>
+
+</form>
+
+</body>
+</html>
