@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facturation - GSB (Nouvelle Version)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h1>Facturation GSB</h1>
+    <p class="subtitle">Nouvelle version simplifiée — Mission 11</p>
+
+    <div class="btn-row">
+      <button id="add">➕ Ajouter une ligne</button>
+      <button id="auto">✨ Auto-remplissage</button>
+      <button id="compute">📘 Calculer</button>
+      <button id="print">🖨️ Imprimer</button>
+    </div>
+
+    <div class="params">
+      <label>Remise (%)<input id="discount" type="number" value="0"></label>
+      <label>TVA (%)<input id="tax" type="number" value="20"></label>
+      <label>Frais (€)<input id="shipping" type="number" value="0"></label>
+    </div>
+
+    <table id="invoice">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Qté</th>
+          <th>Prix</th>
+          <th>Total</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody id="rows">
+
+        <tr class="model" style="display:none;">
+          <td><input class="desc" type="text"></td>
+          <td><input class="qty"  type="number" value="1"></td>
+          <td><input class="price" type="number" value="0"></td>
+          <td class="cell-total">0.00 €</td>
+          <td><button class="remove">❌</button></td>
+        </tr>
+
+        <tr>
+          <td><input class="desc" type="text" value="Produit Base"></td>
+          <td><input class="qty" type="number" value="1"></td>
+          <td><input class="price" type="number" value="10"></td>
+          <td class="cell-total">0.00 €</td>
+          <td><button class="remove">❌</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="totals">
+      <p>Sous-total : <span id="sub">0.00 €</span></p>
+      <p>Après remise : <span id="subD">0.00 €</span></p>
+      <p>Taxe : <span id="taxA">0.00 €</span></p>
+      <p class="big">Total : <span id="grand">0.00 €</span></p>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
